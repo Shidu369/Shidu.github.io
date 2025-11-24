@@ -60,6 +60,8 @@
         <span class="tag">Technology</span>
         <span class="tag">Programming</span>
         <span class="tag">Series & Movies</span>
+        <button class="private-btn" onclick="openPrivate()">ENTER PRIVATE SECTION</button>
+
     </div>
 
     <div class="section">
@@ -111,6 +113,32 @@
   </div>
 </div>
     <script src="script.js"></script>
+
+    <div id="privateModal" class="priv-modal">
+  <div class="priv-window">
+
+    <button class="close-btn" onclick="closePrivate()">✖</button>
+
+    <h2 class="priv-title">Restricted Area</h2>
+    <p>Enter Password:</p>
+
+    <input type="password" id="privPass" class="priv-input" placeholder="Password">
+
+    <div>
+      <button class="priv-submit" onclick="checkPrivate()">ENTER</button>
+    </div>
+
+    <p id="privError" class="priv-error"></p>
+
+  </div>
+</div>
+
+<!-- PRIVATE CONTENT (HIDDEN) -->
+<div id="privateContent" class="private-section">
+  <h2>🔒 PRIVATE SECTION</h2>
+  <p>Welcome, authorized user!</p>
+  <p>(Put your hidden info, easter eggs, special content here)</p>
+</div>
 
 </body>
 </html>
